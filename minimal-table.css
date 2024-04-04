@@ -43,20 +43,80 @@ html {
     font-weight: bold;
   }
 
-  body {
-    /* Center the form on the page */
+  body{
+    background-image: url(./sand.jpg);
+    background-size: cover;
+    margin: 0px;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+    padding: 5%;
+    min-width: 100vh;
+    min-height: 900px;
+    
+    
+
   }
 
+
+  
+  @font-face {
+    font-family: my-cool-font;
+    src: url(../Sand_Dunes.otf);
+  }
+  
+  .bold{
+    
+    font-weight: bold;
+  }
+  .intro , .form {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+
+
+.back {
+  max-width: 100%;
+  margin: 0%;
+  font-family: my-cool-font;
+  padding-top: 40px;
+  border-collapse: collapse;
+  border-radius: 5px;
+  border-color: white;
+  background-color: #000;
+  color: #c5ac84 ;
+  
+  
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+fieldset{
+  border-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
   li{
     list-style-type: none;
   }
   form {
-    display: inline-block;
+    display: flex;
     /* Form outline */
-    padding: 1em;
-    border: 1px solid #ccc;
+    padding: 3%;
+    border: 1px solid #c5ac84 ;
     border-radius: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   ul {
     list-style: none;
@@ -67,12 +127,13 @@ html {
 
   form li + li {
     margin-top: 1em;
+    
   }
 
   label {
     /* Uniform size & alignment */
     display: inline-block;
-    min-width: 90px;
+    
     text-align: right;
   }
 
@@ -91,7 +152,8 @@ textarea {
 input:focus,
 textarea:focus {
   /* Additional highlight for focused elements */
-  border-color: #000;
+  /* change back*/
+  border-color: white;
 }
 
 textarea {
@@ -110,4 +172,56 @@ button {
   /* This extra margin represent roughly the same space as the space
      between the labels and their text fields */
   margin-left: 0.5em;
+}
+
+.p {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  border-color: white solid;
+  border: 3px;
+}
+
+p
+{
+text-align: end;
+
+}
+
+
+
+
+.RndPic {
+  border-color: white;
+  /*min-width: 50%;*/
+}
+
+
+div{
+  border-color: white;
+  border: 5px;
+}
+
+.submitt {
+  padding-left: 2%;
+  padding-top: 5%;
+  
+}
+
+.agreeBox {
+  padding-left: 2%;
+  color: white;
+}
+
+.buttonsub {
+  margin-left: 0%;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 11px;
+  font-weight: bold;
+  color: white;
+  background-color: #c5ac84;
+  box-shadow: #c5ac84;
+  border: 0px;
 }

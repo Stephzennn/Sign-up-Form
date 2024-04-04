@@ -7,25 +7,80 @@
     <link rel="stylesheet" href="minimal-table.css" type="text/css">
   </head>
   <body>
-    <p>This is my page</p>
-    <form id="Name" action="/index.html" method="post">
-        <ul>
+    <div class="back">
+        <div>
+            <img src="./hg.png" alt="">
             
-            <li><label for="Name">Name: </label>
-                <input type="text" name="Name" id="Name" placeholder="Estifan..."></li>
+        </div>
+        Dune Review
+        <p class="intro">
+            The ultimate fate of everyone should be the golden path, the path that will lead us to prosperity instead of stagnation.  If you want to partake in the extraordinary evolution of our species and our universe <span class="bold">sign up</span> below.
+        </p>
+        <form class="form" action="./index.html">
+            <fieldset>
+                <div class="RndPic">ejfnekjfnwkfjnwekfjnwefkjnwfkjwnfwkjfnwfkjnwefkjn</div>
+                <div class="box">
+                    <p class="p">
+                        <p>
+                            <label for="First_name">
+                                *FIRST NAME:
+                                <input type="text" name="UserFirstName" id="First_name" required>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="Last_name">
+                                *LAST NAME:
+                                <input type="text" name="UserLastName" id="Last_name" required>
+                            </label>
+                        </p>
+                    
+                    </p>
+                    
+                    <p class="p">
+                        <p>
+                            <label for="email">
+                                    *EMAIL:
+                                <input type="email" name="UserEmail" id="email" required>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="phoneNo">
+                                *PHONE NO:
+                                <input type="text" name="UserphoneNo" id="phoneNo" required>
+                            </label>
+                        </p>
+                    </p>
+                    <p class="p">
+                        <p>
+                            <label for="password">
+                                    *PASSWORD:
+                                <input type="password" name="UserPassword" id="password" required>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="confirmPass">
+                                *CONFIRM PASSWORD:
+                                <input type="text" name="UserPassword" id="confirmPass" required>
+                            </label>
+                        </p>
+                    </p>
+                </div>
+
+                
+            </fieldset>
+            <fieldset class="submitt">
+                <button class="buttonsub" type="submit" > CREATE ACCOUNT</button>
+                
+            </fieldset>
+            <fieldset class = "agreeBox">
+                By agreeing to this you also agree to our <strong>  terms and service.</strong> 
+            </fieldset>
             
-            <li><label for="email">E-Mail: </label>
-                <input type="email" name="email" id="email" placeholder="Hello@gmail.com"></li>
-            <li>
-                <label for="comment">Comment: </label>
-            </li>
-            <li>
-                <textarea name="comment" id="comment" cols="30" rows="10"></textarea></li>
-            <li class="button">
-                <button type="submit"> SUMBIT</button>
-            </li>
-        </ul>
-        
-    </form>
+            
+        </form>
+       
+    </div>
+    
+    <footer></footer>
   </body>
 </html>
