@@ -57,7 +57,8 @@ html {
     min-width: 100vh;
     min-height: 900px;
     
-    
+    padding-left: 10%;
+    padding-right: 10%;
 
   }
 
@@ -67,7 +68,10 @@ html {
     font-family: my-cool-font;
     src: url(../Sand_Dunes.otf);
   }
-  
+  @font-face {
+    font-family: Amharic_font;
+    src: url(../tint.ttf);
+  }
   .bold{
     
     font-weight: bold;
@@ -77,29 +81,34 @@ html {
     font-family: 'Courier New', Courier, monospace;
   }
 
+  .RndPic {
+    font-family: Amharic_font;
+    font-size: 30px;
+  }
+
 
 
 .back {
   max-width: 100%;
   margin: 0%;
   font-family: my-cool-font;
-  padding-top: 40px;
+  /*padding-top: 40px;*/
   border-collapse: collapse;
-  border-radius: 5px;
+  border-radius: 7px;
   border-color: white;
   background-color: #000;
   color: #c5ac84 ;
   
-  
+  padding: 40px;
   font-size: 40px;
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 fieldset{
-  border-color: red;
+  border: 0px;
   display: flex;
   flex-wrap: wrap;
   
@@ -147,6 +156,7 @@ textarea {
   box-sizing: border-box;
   /* Match form field borders */
   border: 1px solid #999;
+  border-radius: 3px;
 }
 
 input:focus,
@@ -156,6 +166,14 @@ textarea:focus {
   border-color: white;
 }
 
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid{
+  border-color:#c5ac84;
+}
 textarea {
   /* Align multiline text fields with their labels */
   vertical-align: top;
@@ -224,4 +242,20 @@ div{
   background-color: #c5ac84;
   box-shadow: #c5ac84;
   border: 0px;
+}
+.buttonsub:hover {
+  background-color: #e4cfadf8;
+  color: black
+}
+.underline {
+  text-decoration: underline;
+}
+
+.logoImg{
+  filter: brightness(150%); 
+}
+.logoImg:hover {
+  transform: rotate(360deg);
+  transition: transform 2s; 
+  filter: brightness(300%); 
 }
